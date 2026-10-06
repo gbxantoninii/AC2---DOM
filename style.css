@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #222;
+    margin: 0;
+}
+
+body.noturno {
+    background-color: #111;
+    color: #eee;
+}
+
+body.noturno section {
+    background-color: #1e1e1e;
+    border-color: #333;
+}
+
+body.noturno select,
+body.noturno input {
+    background-color: #2a2a2a;
+    color: #eee;
+}
+
+body.noturno header {
+    border-bottom-color: #ed145b;
+}
+
+body.noturno nav {
+    border-top-color: #333;
+}
+
+header {
+    padding: 16px 15px 0 15px;
+    border-bottom: 4px solid #ed145b;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.quadrado {
+    background-color: #ed145b;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 14px;
+}
+
+.nome {
+    color: #ed145b;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 10px;
+}
+
+.telefone {
+    display: block;
+    max-width: 620px;
+    box-sizing: border-box;
+    margin: 16px auto;
+    padding: 12px;
+    background-color: #ed145b;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 12px 0;
+    border-top: 1px solid #ddd;
+}
+
+nav a {
+    color: #ed145b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#inicio {
+    background-color: #ed145b;
+    color: white;
+    border-color: #ed145b;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ed145b;
+}
+
+h2::before {
+    content: "■ ";
+}
+
+label {
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 12px;
+    margin: 5px 0 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+    border-color: #ed145b;
+}
+
+button {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ed145b;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b50d44;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+section button {
+    width: 100%;
+}
+
+#btnNoturno {
+    background-color: white;
+    color: #ed145b;
+    border: 2px solid #ed145b;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+#btnNoturno:hover {
+    background-color: #ffe3ec;
+}
+
+#resultado {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ed145b;
+}
+
+.erro {
+    border-color: red;
+}
+
+.sucesso {
+    background-color: #2a9d4a;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+footer {
+    background-color: #ed145b;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .quadrado {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+}
